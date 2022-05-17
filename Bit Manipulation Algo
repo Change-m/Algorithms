@@ -37,3 +37,31 @@ Swap two Numbers:
                  b = a ^ b = 5
                  a = a ^ b = 7
                  
+Properties of Xor operator:
+                           1.  5 ^ 5 = 0 (xor with same number is alway is 0)
+                           2.  0 ^ n = n (zero xor with any number will gives the same number)
+                           
+
+Question:
+         1.  Find the only non-repeating element in an array where every element repeats twice.
+                  a = [ 5, 4, 1, 4, 3, 5, 1 ]
+                  res = 0
+                  res = 5 ^ 4 ^ 1 ^ 4 = 5 ^ 1 ^ 3 ^ 5 = 1 ^ 3 = 1 ^ 3 ^ 1 = 3
+                  
+                  
+         2.  Find the two non-repeating elements in an array where every element repeats twice.
+                  res = 3 ^ 2
+                  temp = res
+                  for i in range(len(a))
+                  if a[i] & 1 == 0:
+                     return lis1 = a
+                  else;
+                      return lis2 = a
+                   res = res ^ lis1
+                   c = res ^ temp
+         
+         
+         3.  Find the only non-repeating element in an array where every other element repeats thrice.
+                  a = [ 2, 2, 1, 5, 1, 1, 2 ]
+                  
+
