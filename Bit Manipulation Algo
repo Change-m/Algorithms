@@ -1,0 +1,39 @@
+Bit Manipulation: 
+                 Work on binary numbers.
+Decimal number - 274 -->  2 x 10^2 + 7 x 10^1 + 4 x 10^0
+Binary number - 101 -->  1 x 2^2 + 0 x 2^1 + 1 x 2^0
+
+Subract - find inverse of the binary number to add in the number
+          how to find the inverse? use 2's complement
+          1. Invert all the binary digit 
+          2. add one 
+          than 
+          add the inverse to the number than you git the subtracted value.
+          
+Bitwise Operators:
+                  and operator & - if a = 1 and b = 1 it is 1, else 0
+                  or operator | - if a = 0 and b = 0 it is 0, else 1
+                  xor operator ^ - if a = 0, 1 and b = 1, 0 it is 1, else 0
+                  inverse operator ~ - ~5 (101) --> 010
+                  rightshift operator >> - 12 >> 2 shifting 12 2 times ( 001100 -->  000011 )
+                  leftshift operator << - 12 << 2 shfting 12 2 times left ( 001100 -->  110000 )
+                  
+                  # rightshift any number by one it will give the value which divided by 2
+                     example:  b = a >> 1, if a = 5 the output b = 2.
+                     
+                  # leftshift any number by one it will give the value which multiple of 2
+                      example b = a << 1, if a = 3 the output is b = 6.
+                      
+
+Odd / Even number: 
+                  check the number is odd or even we can fast the program by using
+                  a & 1 == 0      instead        a % 2 == 0 
+                  
+                  
+Swap two Numbers:
+                 swap two numbers a = 5 and b = 7
+                 without using any variable
+                 a = a ^ b = 2
+                 b = a ^ b = 5
+                 a = a ^ b = 7
+                 
