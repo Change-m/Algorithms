@@ -1,0 +1,48 @@
+Bit Masking: 
+            Bit masking is used in many places like filter where we masking a black and white mask to a colourful picture.
+            
+            Use:
+            Find the value of ith position
+                5th
+                position -->  8 7 6 5 4 3 2 1 0
+                n     -->     1 0 0 1 1 0 1 0 1
+                masking  -->  0 0 0 1 0 0 0 0 0
+                n & masking -->  Non-zero  --> 1
+                masking = 1 << i
+                
+            
+            Set ith bit in a number
+                 3th
+                 position -->  8 7 6 5 4 3 2 1 0
+                 n    -->      1 0 0 1 1 0 1 0 1
+                 mask   -->    0 0 0 0 0 1 0 0 0
+                 result  -->   1 0 0 1 1 1 1 0 1
+                 mask = 1 << i
+                 n = n | mask
+            
+            
+            Clear ith bit from a number
+                 position  -->  8 7 6 5 4 3 2 1 0
+                 n     -->      1 0 0 1 1 0 1 0 1
+                 mask  -->      1 1 1 1 0 1 1 1 1
+                 mask = ~(1 << i)
+                 result = n & mask
+                 
+                 
+            Find number of bits to Change to convert a to b
+                 part 1
+                 a    -->    1 0 1 1 0
+                 b    -->    1 1 0 1 1
+                 a ^ b  -->  0 1 1 0 1
+                 part 2
+                 a  -->  13 (1 1 0 1)
+                 rightshift untill 1 is in the number count the 1 bit
+                 Optimization
+                 n & (n - 1) = Zero the least significant last set bit means 1
+                 
+                 
+                 
+                 
+                 
+                 
+                 
